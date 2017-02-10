@@ -14,7 +14,7 @@ public class mexicano extends Pato implements Comportamiento   {
 
     @Override
     public void volar() {
-        throw new UnsupportedOperationException("yo no vuelo"); //To change body of generated methods, choose Tools | Templates.
+        System.out.println("yo no vuelo"); //To change body of generated methods, choose Tools | Templates.
     }
         
         
