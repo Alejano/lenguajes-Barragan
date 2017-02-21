@@ -100,8 +100,8 @@ public class AplicacionLectora extends javax.swing.JFrame {
             //vlase tipo entidad
             JFileChooser selector=new JFileChooser ();
             selector.showOpenDialog(this);
-            
-            File file= selector.getSelectedFile();
+            File file= selector.getSelectedFile();//despues de seleccionar se valida
+            ValidacionArchivos.ValidarExtencion(file);//este es el validador
             modelolector modelo=new modelolector();
             textoResultado.setText( modelo.leerArchivo(file) );
             
