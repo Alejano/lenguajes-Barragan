@@ -13,6 +13,14 @@ public class Usuario implements Serializable{
     private String nombre;
     private String email;
     private int edad;
+//constructores que inicializan
+//paso 3 implementar en el boton de buscar la accion del 
+    //boton enlazada a tu logica del paso 1
+    public Usuario(String nombre, String email, int edad) {
+        this.nombre = nombre;
+        this.email = email;
+        this.edad = edad;
+    }
 
     public Usuario() {
     }
